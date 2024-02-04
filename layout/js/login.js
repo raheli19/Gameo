@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
       var user = userList.find(function (user) {
         return user.userName == userName;
       });
+
       if (user !== undefined) {
         document.getElementById("username").value = "";
-
         document.getElementById("error").innerText =
           "Username already exists! Please choose another one.";
       } else if (
