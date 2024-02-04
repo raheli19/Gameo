@@ -1,0 +1,14 @@
+.blockchamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family: 'Arial',sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 40;
+    padding: 10;
+    color: white;
+}
