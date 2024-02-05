@@ -1,6 +1,6 @@
 # Gameo - Video Game Platform
 
-Welcome to **Gameo**, your ultimate destination to discover and play modern video games. This platform was created with passion by *Rahel Amar* and *Mikhal Levi* to provide an immersive and entertaining gaming experience.
+Welcome to **Gameo**, your. ultimate destination to discover and play modern video games. This platform was created with passion by *Rahel Amar* and *Mikhal Levi* to provide an immersive and entertaining gaming experience.
 
 ## Table of Contents
 - [About Gameo](#about-gameo)
