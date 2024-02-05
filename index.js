@@ -98,4 +98,27 @@ function loadData() {
         list.style.display = "none";
       }
     });
+
+    // Get the necessary elements
+const imgBlockChamp = document.getElementById("imgBlockChamp");
+const videoBlockChamp= document.getElementById("videoBlockChamp");
+
+// Add event listener for hover
+imgBlockChamp.addEventListener("mouseover", function () {
+    // Show the video and start playing
+    imgBlockChamp.style.display="none";
+    videoBlockChamp.style.display = "block";
+   
+    //videoPlayer.play();
+});
+
+/*
+imgBlockChamp.addEventListener("mouseleave", function () {
+  // Show the video and start playing
+
+  videoBlockChamp.style.display = "none";
+  imgBlockChamp.style.display="block";
+ 
+  //videoPlayer.play();
+});*/
 }
