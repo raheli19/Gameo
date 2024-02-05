@@ -1,10 +1,14 @@
+// Function to validate email format
 function isValidEmail(email) {
   var regex = /^[^\s@]+@[^\s@]/;
   return regex.test(email);
 }
 
+// DOM content loaded event listener
 document.addEventListener("DOMContentLoaded", function () {
+  // Function to set form properties
   function setProperties(properties) {
+    // Set form properties based on the provided object
     document.getElementById("titleForm").innerText = properties.titleForm;
     document.getElementById("username").placeholder = properties.username;
     document.getElementById("password").placeholder = properties.password;
@@ -16,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("signUpButton").style.display = properties.signIn;
   }
 
+  // Event listeners for "Sign Up" and "Sign In" links
   document.getElementById("signUpLink").addEventListener("click", function () {
     setProperties({
       titleForm: "Gameo Sign Up",
@@ -42,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("error").innerText = "";
   });
 
+  // Event listener for "Sign Up" button
   document
     .getElementById("signUpButton")
     .addEventListener("click", function () {
@@ -84,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+  // Event listener for "Log In" button
   document.getElementById("login").addEventListener("click", function () {
     // check if user exists in local storage UserList
     var userList = JSON.parse(localStorage.getItem("UserList"));
@@ -125,18 +132,18 @@ document.addEventListener("DOMContentLoaded", function () {
       if (AttemptLogin.attempt == 2) {
         var AttemptLogin = JSON.parse(localStorage.getItem("AttemptLogin"));
         var loginTime = loginTime - AttemptLogin.loginTime;
-            document.getElementById("login").disabled = true;
+        document.getElementById("login").disabled = true;
 
         // do a timer timeout to give the user a chance to log in again
-          setTimeout(function () {
-            document.getElementById("error").innerText = "";
-            localStorage.setItem(
-              "AttemptLogin",
-              JSON.stringify({ loginTime: "", attempt: 0 })
-            );
-            // disable button
-            document.getElementById("login").disabled = false;
-          }, 10000);
+        setTimeout(function () {
+          document.getElementById("error").innerText = "";
+          localStorage.setItem(
+            "AttemptLogin",
+            JSON.stringify({ loginTime: "", attempt: 0 })
+          );
+          // disable button
+          document.getElementById("login").disabled = false;
+        }, 10000);
 
         if (loginTime < 10000) {
           document.getElementById("error").innerText =

@@ -1,3 +1,4 @@
+// Event listener for DOM content loaded
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM loaded! 🚀");
   // Check if item exists in local storage, if not initialize them
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Function to load and display player data
 function loadData() {
   // Get object from DOM
   const playerNameElement = document.getElementById("player-name");
@@ -82,7 +84,7 @@ function loadData() {
       table.appendChild(row);
     });
 
-    // Show or hide log list
+  // Show or hide log list
   document
     .getElementById("showListButton")
     .addEventListener("click", function () {

@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../css/login.css" />
-    <script src="../js/login.js"></script>
-  </head>
 
-  <body>
-    <div id="id01" class="modal">
-      <form class="modal-content animate">
-        <div class="imgcontainer">
-          <img src="../../assets/logo.png" width="70px" />
-          <h1 id="titleForm">Gameo Login</h1>
+<head>
+  <link rel="stylesheet" href="../css/login.css" />
+  <script src="../js/login.js"></script>
+</head>
+
+<body>
+  <div id="id01" class="modal">
+    <form class="modal-content animate">
+      <div class="imgcontainer">
+        <img src="../../assets/logo.png" width="70px" />
+        <h1 id="titleForm">Gameo Login</h1>
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required id="username" />
+
+        <div class="mailArea" id="mailArea">
+          <label for="mail"><b>Mail</b></label>
+          <input type="email" placeholder="Enter Mail" name="mail" required id="mail" />
         </div>
 
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input
-            type="text"
-            placeholder="Enter Username"
-            name="uname"
-            required
-            id="username"
-          />
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required id="password" />
+        <span id="error" class="error"></span>
+        <button type="submit" id="login">Login</button>
+        <button type="submit" id="signUpButton" class="signUpButton">Sign Up</button>
 
-          <div class="mailArea" id="mailArea">
-            <label for="mail"><b>Mail</b></label>
-            <input
-              type="email"
-              placeholder="Enter Mail"
-              name="mail"
-              required
-              id="mail"
-            />
-          </div>
+        <label id="signUp" class="signUp">
+          <span name="signUp" id="signUpText"> Don't have an account ?</span>
+          <a id="signUpLink"> Sign Up</a>
+        </label>
+        <label id="signIn" class="signIn">
+          <span name="signIn" id="signInText"> Already have an account ?</span>
+          <a id="signInLink"> Log In</a>
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
 
-          <label for="psw"><b>Password</b></label>
-          <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
-            required
-            id="password"
-          />
-<span id="error" class="error"></span>
-          <button type="submit" id="login">Login</button>
-          <button type="submit" id="signUpButton" class="signUpButton">Sign Up</button>
-
-          <label id="signUp" class="signUp">
-            <span name="signUp" id="signUpText"> Don't have an account ?</span>
-            <a id="signUpLink"> Sign Up</a>
-          </label>
-          <label id="signIn" class="signIn">
-            <span name="signIn" id="signInText"> Already have an account ?</span>
-            <a id="signInLink"> Log In</a>
-          </label>
-        </div>
-      </form>
-    </div>
-  </body>
 </html>
