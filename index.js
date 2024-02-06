@@ -98,4 +98,35 @@ function loadData() {
         list.style.display = "none";
       }
     });
+
+// Get the necessary elements
+const elements = [
+  ["containerImgVideoBlock", "imgBlockChamp", "videoBlockChamp"],
+  ["containerImgVideoMine", "imgMinecraft", "videoMinecraft"],
+  ["containerImgVideoConnect", "imgConnect4", "videoConnect4"],
+  ["containerImgVideoClash", "imgClash", "videoClash"],
+  ["containerImgVideoSoccer", "imgSoccer", "videoSoccer"],
+  ["containerImgVideoBillard", "imgBilliard", "videoBilliard"],
+];
+
+elements.forEach(([containerId, imgId, videoId]) => {
+  addHoverEvent(containerId, imgId, videoId);
+});
+}
+
+// Add hover event listener to all games
+function addHoverEvent(containerId, imgId, videoId) {
+  const divContainer = document.getElementById(containerId);
+  const img = document.getElementById(imgId);
+  const video = document.getElementById(videoId);
+
+  divContainer.addEventListener("mouseover", function () {
+    img.style.display = "none";
+    video.style.display = "block";
+  });
+
+  divContainer.addEventListener("mouseleave", function () {
+    video.style.display = "none";
+    img.style.display = "block";
+  });
 }

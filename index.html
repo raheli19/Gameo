@@ -1,4 +1,4 @@
-<!--Rahel-->
+<!--Rahel amar-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.ico">
     <script src="index.js"></script>
     <title>Gameo - Home</title>
 
@@ -19,12 +19,12 @@
         <main>
             <section id="recent-posts" class="recent-posts">
                 <div class="ranking">
-                    <img class="champion" width="60px" src="./assets/cup.png">
+                    <img class="champion" width="60px" src="./assets/icons/cup.png">
                     <h1 id="player-name"></h1>
                     <p id="player-level">General Level: </p>
                     <button id="showListButton" class="showListButton">Show Actions</button>
                     <ul id="lastlog" class="lastlog"></ul>
-                     <table>
+                    <table>
                         <tr>
                             <th>Rank</th>
                             <th>Name</th>
@@ -36,15 +36,29 @@
 
                     <div class="post">
                         <a href="pages/html/blockchamp.html" target="_parent">
-                            <img src="./assets/gamesPicture/blockchamp.jpg">
-                        </a>
+                            <div class="containerImgVideoBlock" id="containerImgVideoBlock">
+                                <img src="./assets/gamesPicture/blockchamp.jpg" class="imgBlockChamp"
+                                    id="imgBlockChamp">
+                                <video autoplay loop muted class="videoBlockChamp" id="videoBlockChamp">
+                                    <source src="./assets/videos/BlockChamp.mp4" type="">
+                                </video>
+                            </div>
 
+                        </a>
                     </div>
+
                     <div class="post">
                         <a href="pages/html/connect4.html" target="_parent">
-                            <img src="./assets/gamesPicture/connect4.png"></img>
+                            <div class="containerImgVideoConnect" id="containerImgVideoConnect">
+                                <img src="./assets/gamesPicture/connect4.png" class="imgConnect4"
+                                    id="imgConnect4"></img>
+                                <video autoplay loop muted class="videoConnect4" id="videoConnect4">
+                                    <source src="./assets/videos/Connect4.mp4" type="">
+                                </video>
+                            </div>
                         </a>
                     </div>
+
                     <div class="post">
                         <div class="miniposts">
 
@@ -76,7 +90,13 @@
 
                     <div class="post">
                         <a target="_parent">
-                            <img src="./assets/gamesPicture/minecraft.jpg"></img>
+                            <div class="containerImgVideoMine" id="containerImgVideoMine">
+                                <img src="./assets/gamesPicture/minecraft.jpg" class="imgMinecraft"
+                                    id="imgMinecraft"></img>
+                                <video autoplay loop muted class="videoMinecraft" id="videoMinecraft">
+                                    <source src="./assets/videos/Minecraft.mp4" type="">
+                                </video>
+                            </div>
                         </a>
                     </div>
                     <div class="post">
@@ -85,79 +105,97 @@
                             <div class="minipost">
                                 <a target="_parent">
                                     <img src="./assets/gamesPicture/minigolf.jpg">
-                                </a>
-
-                            </div>
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/barmaster.jpg"></img>
-                                </a>
-                            </div>
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/crazyspeed.jpg"></img>
-                                </a>
-                            </div>
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/basketrandom.jpg"></img>
-                                </a>
+                            </a>
                             </div>
 
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/barmaster.jpg"></img>
+                            </a>
+                        </div>
+
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/crazyspeed.jpg"></img>
+                            </a>
+                        </div>
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/basketrandom.jpg"></img>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    </div>
+                
+                    <div class="post">
+                    <a target="_parent">
+                        <div class="containerImgVideoClash" id="containerImgVideoClash">
+                            <img src="./assets/gamesPicture/clashofclans.jpg" class="imgClash" id="imgClash">
+                            <video autoplay loop muted class="videoClash" id="videoClash">
+                                <source src="./assets/videos/Clash.mp4" type="">
+                            </video>
+                        </div>
+                    </a>
+
+                    </div>
+
+                    <div class="post">
+                    <div class="miniposts">
+
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/helixjumpr.jpg">
+
+                            </a>
 
                         </div>
-                    </div>
-                    <div class="post">
-                        <a target="_parent">
-                            <img src="./assets/gamesPicture/clashofclans.jpg">
-                        </a>
-
-                    </div>
-
-
-                    <div class="post">
-                        <div class="miniposts">
-
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/helixjumpr.jpg">
-                                </a>
-
-                            </div>
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/snakeio.jpg"></img>
-                                </a>
-                            </div>
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/ragdol.jpg"></img>
-                                </a>
-                            </div>
-                            <div class="minipost">
-                                <a target="_parent">
-                                    <img src="./assets/gamesPicture/farmmergevalley.jpg"></img>
-                                </a>
-                            </div>
-
-
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/snakeio.jpg"></img>
+                            </a>
                         </div>
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/ragdol.jpg"></img>
+                            </a>
+                        </div>
+                        <div class="minipost">
+                            <a target="_parent">
+                                <img src="./assets/gamesPicture/farmmergevalley.jpg"></img>
+                            </a>
+                        </div>
+
+
                     </div>
-                    <div class="post">
-                        <a target="_parent">
-                            <img src="./assets/gamesPicture/soccerbros.jpg"></img>
-                        </a>
                     </div>
 
                     <div class="post">
-                        <a target="_parent">
-                            <img src="./assets/gamesPicture/billard.jpg">
-                        </a>
+                    <a target="_parent">
+                        <div class="containerImgVideoSoccer" id="containerImgVideoSoccer">
+                            <img src="./assets/gamesPicture/soccerbros.jpg" class="imgSoccer" id="imgSoccer"></img>
+                            <video autoplay loop muted class="videoSoccer" id="videoSoccer">
+                                <source src="./assets/videos/Soccer.mp4" type="">
+                            </video>
+                        </div>
+                    </a>
+                    </div>
+
+                    <div class="post">
+                    <a target="_parent">
+                        <div class="containerImgVideoBillard" id="containerImgVideoBillard">
+                            <img src="./assets/gamesPicture/billard.jpg" class="imgBilliard" id="imgBilliard">
+                            <video autoplay loop muted class="videoBilliard" id="videoBilliard">
+                                <source src="./assets/videos/Billiard.mp4" type="">
+                            </video>
+                        </div>
+                    </a>
 
                     </div>
-                </div>
-            </section>
-        </main>
+    </div>
+    </section>
+    </main>
     </div>
     <embed type="text/html" src="layout/html/footer.html" class="footer">
 </body>

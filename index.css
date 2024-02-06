@@ -96,6 +96,7 @@ p {
 .post {
   width: 100%;
   box-sizing: border-box;
+  
 }
 
 .post img {
@@ -183,6 +184,18 @@ td {
   background-color: transparent;
   cursor: pointer;
 }
+
+
+
+video {
+   width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: none;
+}
+
+
+
 
 @media (max-width: 800px) {
   .posts {
