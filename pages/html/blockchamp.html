@@ -1,25 +1,20 @@
 <!DOCTYPE html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/blockchamp.css">
-    <link rel="stylesheet" href="../../index.css">
-    <link rel="icon" type="image/x-icon" href="../../assets/icons/logo.ico">
-    <title>Gameo - BlockChamp</title>
-</head>
-
-<body>
-    <div class="main">
-        <embed type="text/html" src="../../layout/html/header.html">
-        <main>
-            <section class="blockchamp">
-                <h1 class="title">BLOCKCHAMP</h1>
-              
-            </section>
-        </main>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" type="text/css" href="../css/blockchamp.css">
+  </head>
+  <body>
+    <h1>Memory Cards</h1>
+    <div class="grid-container">
     </div>
-    <embed type="text/html" src="../../layout/html/footer.html" class="footer">
-</body>
-
+    <p>Score: <span class="score"></span></p>
+    <div class="actions">
+        <button onclick="restart()">Restart</button>
+    </div>
+    <script src="../js/blockchamp.js"></script>
+  </body>
 </html>
+
+
