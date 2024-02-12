@@ -1,41 +1,40 @@
 [
     {
-        "image": "../assets/gamesPicture/chili.png",
+        "image": "GAMEO/assets/gamesPicture/chili.png",
         "name": "chili"
     },
     {
-        "image": "../assets/gamesPicture/grapes.png",
+        "image": "GAMEO/assets/gamesPicture/grapes.png",
         "name": "grapes"
     },
     {
-        "image": "../assets/gamesPicture/lemon.png",
+        "image": "GAMEO/assets/gamesPicture/lemon.png",
         "name": "lemon"
     },
     {
-        "image": "../assets/gamesPicture/orange.png",
+        "image": "GAMEO/assets/gamesPicture/orange.png",
         "name": "orange"
     },
     {
-        "image": "../assets/gamesPicture/pineapple.png",
+        "image": "GAMEO/assets/gamesPicture/pineapple.png",
         "name": "pineapple"
     },
     {
-        "image": "../assets/gamesPicture/strawberry.png",
+        "image": "GAMEO/assets/gamesPicture/strawberry.png",
         "name": "strawberry"
     },
     {
-        "image": "../assets/gamesPicture/tomato.png",
+        "image": "GAMEO/assets/gamesPicture/tomato.png",
         "name": "tomato"
     },
     {
-        "image": "../assets/gamesPicture/watermelon.png",
+        "image": "GAMEO/assets/gamesPicture/watermelon.png",
         "name": "watermelon"
     },
     {
-        "image": "../assets/gamesPicture/cherries.png",
+        "image": "GAMEO/assets/gamesPicture/cherries.png",
         "name": "cherries"
     }
 ]
 
     
-]
