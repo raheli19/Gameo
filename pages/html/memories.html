@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" type="text/css" href="../css/memories.css">
+  </head>
+  <body>
+    <h1>Memory Cards</h1>
+    <div class="grid-container">
+        <img class="hidden"  src="../../assets/gamesPicture/cherries.png">
+        <img   class="hidden" src="../../assets/gamesPicture/lemon.png">
+        <img   class="hidden" src="../../assets/gamesPicture/pineapple.png">
+        <img  class="hidden"  src="../../assets/gamesPicture/orange.png">
+        <img class="hidden"  src="../../assets/gamesPicture/strawberry.png">
+        <img class="hidden"  src="../../assets/gamesPicture/tomato.png">
+        <img class="hidden"  src="../../assets/gamesPicture/watermelon.png">
+        <img class="hidden" src="../../assets/gamesPicture/grapes.png">
+        <img class="hidden" src="../../assets/gamesPicture/avoca.png">
+        </div>
+    <p>Score: <span class="score"></span></p>
+    <button class="startGame" id="starting" onclick="startToPlay()">start To Play</button>
+    <div class="actions">
+        <button onclick="restart()">Restart</button>
+        <button onclick="firstLevel()">level 1</button>
+        <button onclick="secondLevel()">level 2</button>
+        <button onclick="thirdLevel()">level 3</button>
+    </div>
+     <script src="../js/memories.js"></script>
+  </body>
+</html>
+
+
+
