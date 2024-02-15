@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
           userPassword: userPassword,
           userEmail: userEmail,
           entryNumber: 0,
-          point: 10,
+          point: 0,
           lastLogin: localTime,
           action: ["Sign In - " + localTime],
           record: [],

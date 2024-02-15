@@ -88,6 +88,23 @@ const initGame = () => {
             snakeBody.push([food.y, food.x]); // Pushing food position to snake body array
             eatenFoodIndexes.push(index);
             score++; // increment score by 1
+
+
+             var userList = JSON.parse(localStorage.getItem("UserList"));
+             var actualUser = JSON.parse(localStorage.getItem("ActualUser"));
+             var userName = actualUser.userName;
+
+             const indexUser = userList.findIndex(function (user) {
+               return user.userName === userName;
+             });
+             const updatedUser = {
+               ...userList[indexUser],
+               point: parseInt(userList[indexUser].point) + 1,
+             };
+             userList[indexUser] = updatedUser;
+
+             localStorage.setItem("ActualUser", JSON.stringify(updatedUser));
+             localStorage.setItem("UserList", JSON.stringify(userList));
             highScore = score >= highScore ? score : highScore;
             localStorage.setItem("high-score", highScore);
             scoreElement.innerText = `Score: ${score}`;

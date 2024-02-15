@@ -38,6 +38,47 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   });
+
+    const memoryContainer = document.getElementById("containerImgVideoBlock");
+    memoryContainer.addEventListener("click", function () {
+      // add data to local storage UserList
+      var userList = JSON.parse(localStorage.getItem("UserList"));
+      var actualUser = JSON.parse(localStorage.getItem("ActualUser"));
+      var userName = actualUser.userName;
+
+      const index = userList.findIndex(function (user) {
+        return user.userName === userName;
+      });
+      const updatedUser = {
+        ...userList[index],
+        action: [...userList[index].action, "Game Visited - Memory Game"],
+      };
+      userList[index] = updatedUser;
+
+      localStorage.setItem("ActualUser", JSON.stringify(updatedUser));
+      localStorage.setItem("UserList", JSON.stringify(userList));
+    });
+
+     const snakeContainer = document.getElementById("containerImgVideoConnect");
+     snakeContainer.addEventListener("click", function () {
+       // add data to local storage UserList
+       var userList = JSON.parse(localStorage.getItem("UserList"));
+       var actualUser = JSON.parse(localStorage.getItem("ActualUser"));
+       var userName = actualUser.userName;
+
+       const index = userList.findIndex(function (user) {
+         return user.userName === userName;
+       });
+       const updatedUser = {
+         ...userList[index],
+         action: [...userList[index].action, "Game Visited - Snake Game"],
+       };
+       userList[index] = updatedUser;
+
+       localStorage.setItem("ActualUser", JSON.stringify(updatedUser));
+       localStorage.setItem("UserList", JSON.stringify(userList));
+     });
+
 });
 
 // Function to load and display player data
