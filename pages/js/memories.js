@@ -25,7 +25,7 @@ function startToPlay() {
         button.style.display = 'block'; // Hide all buttons
       
       });
-      shuffleCards();
+     
     }
   
   
@@ -103,9 +103,7 @@ function flipCard() {
   }
 
   secondCard = this;
- // score++;
- // document.querySelector(".score").textContent = score;
-  lockBoard = true;
+ lockBoard = true;
 
   checkForMatch();
 }
@@ -115,14 +113,18 @@ let isMatch = firstCard.title === secondCard.title;
 
 isMatch ? disableCards() : unflipCards();
 }
+
 //removes the event of flipcard from a card which is already clicked
 function disableCards() {
+  firstCard.classList.add("matched");
+  secondCard.classList.add("matched");
 firstCard.removeEventListener("click", flipCard);
 secondCard.removeEventListener("click", flipCard);
 score++;
 document.querySelector(".score").textContent = score;
 resetBoard();
 }
+
 // //when the 2 flipped cards are not the same we remove from them the class of 'flipped'
 function unflipCards() {
 setTimeout(() => {
